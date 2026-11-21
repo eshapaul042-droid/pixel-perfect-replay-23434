@@ -28,3 +28,7 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project architecture
+
+- Keep ScamShield's Home, Scanner, Results, and History as separate TanStack file routes, with browser-only scan persistence and rule-based demo analysis in shared modules so every screen uses the same transparent workflow.

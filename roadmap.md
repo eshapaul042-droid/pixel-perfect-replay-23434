@@ -1,0 +1,2 @@
+- [ ] Build ScamShield home, scanner, results, and history screens with transparent demo rules and browser-only history.
+- [ ] Verify the scan flow, route matching, tests, preview diagnostics, and commit the finished work.
