@@ -1,2 +1,2 @@
-- [ ] Build ScamShield home, scanner, results, and history screens with transparent demo rules and browser-only history.
-- [ ] Verify the scan flow, route matching, tests, preview diagnostics, and commit the finished work.
+- [ ] Add matching Job and URL scanner routes and transparent rule-based analysis while preserving the message scanner.
+- [ ] Verify all three scan-to-results flows, route generation, tests, preview diagnostics, and commit the finished work.

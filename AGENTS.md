@@ -31,4 +31,4 @@ use the editor.
 
 ## Project architecture
 
-- Keep ScamShield's Home, Scanner, Results, and History as separate TanStack file routes, with browser-only scan persistence and rule-based demo analysis in shared modules so every screen uses the same transparent workflow.
+- Keep ScamShield's Home, Message, URL, and Job scanners, their results, and History in separate TanStack file routes; use shared rule-analysis modules and browser-only persistence so each workflow stays transparent and consistent.

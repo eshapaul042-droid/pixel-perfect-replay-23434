@@ -25,13 +25,14 @@ export function clearScanHistory(): void {
   window.localStorage.removeItem(HISTORY_KEY);
 }
 
-function isScanResult(value: unknown): value is ScanResult {
+export function isScanResult(value: unknown): value is ScanResult {
   if (typeof value !== "object" || value === null) return false;
   const record = value as Record<string, unknown>;
   return (
     typeof record.id === "string" &&
     typeof record.content === "string" &&
     typeof record.scannedAt === "string" &&
+    (record.scanType === undefined || record.scanType === "message" || record.scanType === "url" || record.scanType === "job") &&
     typeof record.riskScore === "number" &&
     (record.riskLevel === "Low" || record.riskLevel === "Medium" || record.riskLevel === "High") &&
     Array.isArray(record.findings) &&

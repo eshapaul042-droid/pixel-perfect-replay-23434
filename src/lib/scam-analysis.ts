@@ -12,6 +12,7 @@ export interface ScanResult {
   id: string;
   scannedAt: string;
   content: string;
+  scanType?: "message" | "url" | "job";
   riskLevel: RiskLevel;
   riskScore: number;
   findings: ScanFinding[];
@@ -140,6 +141,7 @@ export function analyzeMessageDemo(
     id,
     scannedAt,
     content,
+    scanType: "message",
     riskLevel,
     riskScore,
     findings,
